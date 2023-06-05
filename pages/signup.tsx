@@ -11,15 +11,6 @@ const SignUp: FunctionComponent<SignUpProps> = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [value, setValue] = useState<string | undefined>();
 
-  const countryOptions = [
-    { value: "AF", label: "Afghanistan" },
-    { value: "AX", label: "Åland Islands" },
-    // Add all country options here...
-    { value: "ZW", label: "Zimbabwe" },
-    { value: "KH", label: "Cambodia" },
-  ];
-  const defaultCountry = { value: "KH", label: "Cambodia" };
-
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -50,7 +41,7 @@ const SignUp: FunctionComponent<SignUpProps> = () => {
             Log In as a Guest
           </button>
         </div>
-        <div className="w-max font-league-spartan border-l-0 md:border-l-2 border-black border-t-2 md:border-t-0 bg-[#E6FCFF] px-5 flex flex-col justify-center items-center my-auto mx-auto space-x-2">
+        <div className="w-max font-league-spartan border-l-0 md:border-l-2 border-black border-t-2 md:border-t-0 bg-[#E6FCFF] py-3 px-5 flex flex-col justify-center items-center mx-auto space-x-2">
           <h1 className="font-league-spartan text-4xl font-bold text-center">
             Sign Up
           </h1>
@@ -69,9 +60,9 @@ const SignUp: FunctionComponent<SignUpProps> = () => {
             <p className="text-sm font-league-spartan items-start mx-2">
               Phone Number
             </p>
-            <div className="flex items-center border-2 border-gray-400 rounded-md p-2 m-2 w-full">
+            <div className="flex items-center border-2 bg-white border-gray-400 rounded-md p-2 m-2 w-full">
               <PhoneInput
-                className="flex-1 outline-none text-sm font-league-spartan "
+                className="flex-1  outline-none text-sm font-league-spartan "
                 placeholder="Enter phone number"
                 value={value}
                 onChange={setValue}
