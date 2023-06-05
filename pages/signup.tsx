@@ -2,7 +2,6 @@ import { FunctionComponent, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Select from "react-select";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 
