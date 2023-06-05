@@ -9,7 +9,7 @@ interface SignUpProps {}
 
 const SignUp: FunctionComponent<SignUpProps> = () => {
   const [isChecked, setIsChecked] = useState(false);
-  const [value, setValue] = useState();
+  const [value, setValue] = useState<string | undefined>();
 
   const countryOptions = [
     { value: "AF", label: "Afghanistan" },
